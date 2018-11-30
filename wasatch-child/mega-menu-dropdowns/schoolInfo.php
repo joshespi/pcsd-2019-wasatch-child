@@ -42,8 +42,10 @@
 		</ul>
 	<h3><img src="https://timpviewbeta.provo.edu/wp-content/themes/pcsd-2019-theme/assets/icons/school-info.svg" alt="" />Media Center</h3>
 		<ul>
-			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/media-center/">School Media Center</a></li>
-			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/media-center/s-t-a-r-students-thrilled-about-reading-reading-challenge/">Star Reader</a></li>
+			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/media-center/">Media Center</a></li>
+			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/media-center/s-t-a-r-students-thrilled-about-reading-reading-challenge/">S.T.A.R. Reading Challenge</a></li>
+			<li class="int"><a href="https://wasatch.provo.edu/satchs-caldecott-challenge/">Satch’s Caldecott Challenge</a></li>
 			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/media-center/great-brain-projects/">Great Brain</a></li>
+			<li class="pdf"><a href="https://wasatch.provo.edu/wp-content/uploads/2018/11/Newbery-Challenge-2018.pdf">Newberry Reading Challenge</a></li>
 		</ul>
 </div>
