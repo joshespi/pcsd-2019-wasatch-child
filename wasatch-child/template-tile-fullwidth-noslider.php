@@ -1,13 +1,14 @@
 <?php
 /*
-	Template Name: Full Width with Tiles
+	Template Name: Full width no slider - tiles
 */
 
 	get_header();
 ?>
 		<main id="contentArea">
 			<?php custom_breadcrumbs(); ?>
-			<section id="mainContent" class="single-page">
+			<section id="mainContent" class="tile-page no-slider">
+				<article class="currentContent">	
 					<?php
 						if(have_posts()) :
 						while (have_posts()) : the_post();?>
@@ -19,10 +20,10 @@
 							else :
 								echo '<p>No Content Found</p>';
 					endif;
+					wp_reset_query();
 				?>
-				<div class="clear"></div>
-			</section>
-			<section class="tiles">
+				</article><!-- End .currentContent -->
+							<section class="tiles">
 	   			<?php if(get_field('square_1')) { ?>
 		   			<aside class="tile">
 		   				<div class="featured-image">
@@ -71,8 +72,8 @@
 			   				<?php the_field('square_6'); ?>
 		   			</aside>
 	   			<?php }	?>
-	   		</section><!-- tiles end -->
-   		</section>
+	   		</section><!-- tiles end -->	
+   		</section><!-- End .tile-page -->
 		</main>
 		<?php
 	   		global $post;
@@ -90,7 +91,6 @@
 	   		} else {
 		   		get_sidebar( $sidebar );
 	   		}
-
 
 			get_footer();
 		?>

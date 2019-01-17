@@ -20,13 +20,19 @@
 							else :
 								echo '<p>No Content Found</p>';
 					endif;
+					wp_reset_query();
 				?>
 				</article><!-- End .currentContent -->
 				<article class="slider">
 	   			<div class="departmentNews">
 				  <?php
 					  	$slidercat = get_field('slider_category');
-				  		$args = array( 'posts_per_page' => 3 , 'category_name'  => $slidercat);
+					  	$slidercat2 = get_field('slider_category_copy');
+					  	if(get_field('slider_category_copy')) {
+						  	$slidercat = get_field('slider_category'). ',' . get_field('slider_category_copy');
+					  	}
+					  	
+				  		$args = array( 'posts_per_page' => 3 , 'category_name' => $slidercat);
 						// Variable to call WP_Query.
 						$the_query = new WP_Query( $args );
 						if($the_query->have_posts()) :
