@@ -29,7 +29,7 @@
 	   <li><a href="<?php echo get_home_url(); ?>">News</a></li>
 	   <li><a href="<?php echo get_home_url(); ?>/school-information/">School Information</a></li>   
 	   <li><a href="<?php echo get_home_url(); ?>/policies-forms/">Policies &amp; Forms</a></li>
-	   <li><a href="<?php echo get_home_url(); ?>/faculty-staff/main-office-administration/">Faculty &amp; Staff</a></li>
+	   <li><a href="<?php echo get_home_url(); ?>/faculty-staff/">Faculty &amp; Staff</a></li>
 	   
 	</ul>
 </div>
