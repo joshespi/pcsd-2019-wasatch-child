@@ -300,9 +300,9 @@ Calendar plugin styling
 #mainSidebar .simcal-default-calendar-list dt.simcal-day-label > span {width: 94%;color: #fff!important;}
 #mainSidebar .simcal-default-calendar-list .simcal-event-details {border-bottom: 1px solid #02365b;}
 #mainSidebar .simcal-default-calendar-list .simcal-event-details .simcal-event-start-date {display: none;}
-.single-page .simcal-day-label {background-color: #02224f!important;}
+.single-page .simcal-day-label {background-color: #671614!important;}
 .single-page .simcal-present div {border: 1px solid #fc7e02!important; }
-.single-page .simcal-present .simcal-day-label {background-color: #fc7e02!important;}
+.single-page .simcal-present .simcal-day-label {background-color: #d6af2f!important;}
 /*================================================================================================================
 Post grid
 ================================================================================================================*/
