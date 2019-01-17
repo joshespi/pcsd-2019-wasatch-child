@@ -24,12 +24,12 @@
 		    var cludoSettings = {
 		        customerId: 10000352,
 		        engineId: 10000520,
-		        searchUrl: 'https://www.franklin.provo.edu/search-results/',
+		        searchUrl: 'https://wasatch.provo.edu/search-results/',
 		        language: 'en',
 		        searchInputs: ['cludo-search-form'],
 		        template: 'StandardInlineImages',
 		        type: 'inline',
-		        initFacets: { "Category": ["Franklin Elementary"] }     
+		        initFacets: { "Category": ["Wasatch Elementary"] }     
 		    };
 		CludoSearch= new Cludo(cludoSettings);
 		CludoSearch.init();
