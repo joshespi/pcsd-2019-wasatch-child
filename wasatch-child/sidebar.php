@@ -67,6 +67,12 @@
 							<span>Volunteer Opportunities</span>
 						</a>
 					</li>
+					<li>
+						<a href="<?php echo get_home_url(); ?>/school-information/registration/">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/apply-for-free-meals.svg" alt="" />
+							<span>Registration</span>
+						</a>
+					</li>
 				</ul>
 			</section>
 		</aside>
