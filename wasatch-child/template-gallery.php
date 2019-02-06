@@ -47,16 +47,17 @@
 			</section>
 		</main>
 		<?php
-			global $post;
-	   		if(in_array( 43177, get_post_ancestors($post))) {
-		   		get_sidebar( 'about-timpview' );
-	   		} elseif(in_array( 42312, get_post_ancestors($post))) {
-		   		get_sidebar( 'counseling' );
-	   		} elseif(in_array( 43352, get_post_ancestors($post))) {
-		   		get_sidebar( 'extracurricular' );
-	   		} elseif(in_array( 43027, get_post_ancestors($post))) {
+	   		global $post;
+	   		if(in_array( 117, get_post_ancestors($post))) {
+		   		get_sidebar( 'about' );
+	   		} //elseif(in_array( 117, get_post_ancestors($post))) {
+		   		//get_sidebar( 'counseling' );
+	   		//} elseif(in_array( 43352, get_post_ancestors($post))) {
+		   		//get_sidebar( 'extracurricular' );
+	   		//} 
+	   		elseif(in_array( 122, get_post_ancestors($post))) {
 		   		get_sidebar( 'policies-forms' );
-	   		} elseif(in_array( 42310, get_post_ancestors($post))) {
+	   		} elseif(in_array( 70, get_post_ancestors($post))) {
 		   		get_sidebar( 'faculty-staff' );
 	   		} else {
 		   		get_sidebar( $sidebar );
