@@ -57,6 +57,7 @@
 					<?php
 						
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+						$the_query = new WP_Query( array( 'posts_per_page' => 9 , 'post_type'  => array('post', 'principals_message') , 'cat' => array(1, 21) , 'paged'  => $paged) );
 						if($the_query->have_posts()) :
 							while ($the_query->have_posts()) : $the_query->the_post();?>
 						   		<article class="post">
