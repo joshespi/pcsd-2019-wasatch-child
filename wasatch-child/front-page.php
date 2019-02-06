@@ -55,14 +55,19 @@
 			<section id="mainContent" class="postgrid newsBlog">
 				<h1>Wasatch News</h1>
 					<?php
+						
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-						$the_query = new WP_Query( array( 'posts_per_page' => 18 , 'post_type'  => 'post' , 'paged'  => $paged) );
 						if($the_query->have_posts()) :
 							while ($the_query->have_posts()) : $the_query->the_post();?>
 						   		<article class="post">
 					   				<header class="postmeta">
 						   				<?php 
-							   				if(has_post_thumbnail()) { ?>
+							   				if ($post->post_type == "principals_message") { ?>
+							   					<a href="<?php the_permalink(); ?>">
+						   							<div class="featured-image">
+						   								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/principal-message.jpg" alt="Admin photo" class="left" />
+								   					</div>
+ 									<?php	} elseif (has_post_thumbnail()) { ?>
 						   						<a href="<?php the_permalink(); ?>">
 						   							<div class="featured-image">
 						   								<?php the_post_thumbnail(); ?>
@@ -75,7 +80,7 @@
 											   		</div>
 							   					
 							   		<?php }?>
-													<h2><?php the_title(); ?></h2>
+													<h2><?php if ($post->post_type == "principals_message") { echo "Principal's Message - " . get_the_title(); } else { the_title(); } ?></h2>
 								   				</a>
 										<ul>
 											<li><img src="//globalassets.provo.edu/image/icons/calendar-ltblue.svg" alt="" /><?php the_time(' F jS, Y') ?></li>
