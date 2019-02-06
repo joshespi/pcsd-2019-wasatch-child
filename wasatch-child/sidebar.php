@@ -1,16 +1,16 @@
 <aside id="mainSidebar">
 				<?php
-					$my_query = new WP_Query( array('showposts' => $posts_to_show, 'category_name'  => 'message-from-administration'));
+					$my_query = new WP_Query( array('showposts' => $posts_to_show, 'post_type'  => 'principals_message', 'posts_per_page' => 1));
 				   			while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 				   				<article class="post">
-							   		<header class="postmeta">
-										<h1><?php the_title(); ?></h1>
-											<ul>
-												<li><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/calendar-ltblue.svg" alt="" /><?php the_time(' F jS, Y') ?></li>
-											</ul>
-									</header>
-									<img src="<?php the_post_thumbnail_url(); ?>" alt="Admin photo" class="left" />
-							   		<?php echo get_excerpt(); ?>
+							   		<a href="<?php the_permalink(); ?>">
+								   		<header class="postmeta">
+											<h1>Principal's Message</h1>
+											<h2><?php the_title(); ?></h2>
+										</header>
+										<img src="<?php echo get_theme_file_uri(); ?>/assets/images/principal-message.jpg" alt="Admin photo" class="left" />
+							   		</a>
+							   		<?php the_excerpt(); ?>
 							   		<p class="readmore"><a href="<?php the_permalink(); ?>">Read More</a></p>
 							   	</article>
 							<?php endwhile;
