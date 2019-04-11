@@ -77,7 +77,7 @@
 							   		<?php } else { ?>
 								   				<a href="<?php the_permalink(); ?>">
 												   	<div class="featured-image">
-											   			<img src="<?php echo get_stylesheet_directory_uri().'/assets/images/header-logo.png'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
+											   			<img src="<?php echo get_stylesheet_directory_uri().'/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
 											   		</div>
 							   					
 							   		<?php }?>

@@ -28,11 +28,11 @@
 											   			<?php } ?>
 											   			</div>
 										   			</div>
-										   		<?php } else { ?>
-													<div class="featured-image-full">
-														<?php the_post_thumbnail(); ?>
-									   				</div>
-									   					<?php }	?>
+										   		<?php } elseif (has_post_thumbnail()) { ?>
+													<div class="featured-image-full" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
+									   					<?php } else { ?>
+										   					<img class="featured-image" src="<?php echo get_stylesheet_directory_uri().'/assets/images/building-image.jpg'; ?>" alt="" />	
+									   				<?php } ?>
 
 											<?php 
 												the_content();
@@ -66,15 +66,32 @@
 			   		$my_query = new WP_Query( array('showposts' => $posts_to_show, 'category_name'  => 'News', 'post__not_in' => array($currentID)));
 			   			while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 			   				<article class="post">
-								<div class="featured-image">
-									<?php the_post_thumbnail(); ?>
-							   	</div>
-						   		<header class="postmeta">
-									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+								<header class="postmeta">
+						   				<?php 
+							   				if ($post->post_type == "principals_message") { ?>
+							   					<a href="<?php the_permalink(); ?>">
+						   							<div class="featured-image">
+						   								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/principal-message.jpg" alt="Admin photo" class="left" />
+								   					</div>
+ 									<?php	} elseif (has_post_thumbnail()) { ?>
+						   						<a href="<?php the_permalink(); ?>">
+						   							<div class="featured-image">
+						   								<?php the_post_thumbnail(); ?>
+								   					</div>
+							   					
+							   		<?php } else { ?>
+								   				<a href="<?php the_permalink(); ?>">
+												   	<div class="featured-image">
+											   			<img src="<?php echo get_stylesheet_directory_uri().'/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
+											   		</div>
+							   					
+							   		<?php }?>
+													<h2><?php if ($post->post_type == "principals_message") { echo "Principal's Message - " . get_the_title(); } else { the_title(); } ?></h2>
+								   				</a>
 										<ul>
 											<li><img src="//globalassets.provo.edu/image/icons/calendar-ltblue.svg" alt="" /><?php the_time(' F jS, Y') ?></li>
 										</ul>
-								</header>
+									</header>
 						   		<?php echo get_excerpt(); ?>
 						   	</article>
 						<?php endwhile;?>

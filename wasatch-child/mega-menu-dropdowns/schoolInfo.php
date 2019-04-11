@@ -30,7 +30,7 @@
 			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/volunteer-opportunities/">Volunteer Opportunities</a></li>
 			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/chinese-immersion/">Chinese Immersion</a></li>
 			<li class="pdf"><a href="https://www.wasatch.provo.edu/wp-content/uploads/2018/11/Wasatch-Boundaries.pdf">Boundary Map</a></li>
-			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/carpool-pickup-and-drop-off-instructions/">Carpool Pickup and Drop-off Instructions</a></li>
+			<li class="int"><a href="https://wasatch.provo.edu/school-information/student-drop-off-and-pick-up-procedures/">Student Drop Off and Pick Up Procedures</a></li>
 		</ul>
 </div>
 <div class="dropDownColumn">
@@ -49,6 +49,6 @@
 			<li class="int"><a href="https://wasatch.provo.edu/satchs-caldecott-challenge/">Satch’s Caldecott Challenge</a></li>
 			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/media-center/great-brain-projects/">Great Brain</a></li>
 			<li class="pdf"><a href="https://wasatch.provo.edu/wp-content/uploads/2018/11/Newbery-Challenge-2018.pdf">Newberry Reading Challenge</a></li>
-			<li class="ext"><a href="https://provo.follettdestiny.com/cataloging/servlet/presentadvancedsearchredirectorform.do?l2m=Library%20Search&tm=TopLevelCatalog">Wasatch Library Catalog </a></li>
+			<li class="ext"><a href="https://provo.follettdestiny.com">Wasatch Library Catalog</a></li>
 		</ul>
 </div>

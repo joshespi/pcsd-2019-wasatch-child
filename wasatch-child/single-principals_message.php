@@ -3,7 +3,7 @@
 			<?php custom_breadcrumbs(); ?>
 			<section id="mainContent" class="single-post">
 			<h1>Principal's Message</h1>
-			<img src="<?php echo get_theme_file_uri(); ?>/assets/images/principal-message.jpg" alt="Admin photo" class="right" />
+				
 					<?php
 						//$galleryArray = get_post_gallery_ids($post->ID);
 						if(have_posts()) :
@@ -16,7 +16,7 @@
 												<li><img src="//globalassets.provo.edu/image/icons/hamburger-ltblue.svg" alt="" />Principal's Message</li> -->
 											</ul>
 										</header>
-										
+										<img class="featured-image" src="<?php echo get_theme_file_uri(); ?>/assets/images/principal-message.jpg" alt="Admin photo" class="right" />
 								   		<?php the_content(); ?>
 
 						   	<?php endwhile;
