@@ -48,7 +48,23 @@
 		<nav id="mainMenu" role="navigation">
 			<input type="checkbox" id="reveal-menu" role="button">
 			<label class="mobileMenu" for="reveal-menu" onclick><img src="<?php echo get_template_directory_uri() . '/assets/icons/menu.svg'; ?>" alt="" />Menu</label>
-			<?php echo file_get_contents(get_stylesheet_directory_uri().'/mainmenu.php'); ?>
+			<?php
+				//echo file_get_contents(get_stylesheet_directory_uri().'/mainmenu.php');
+			?>
+			<?php
+			// create a new cURL resource
+			$main_menu = curl_init();
+			
+			// set URL and other appropriate options
+			curl_setopt($main_menu, CURLOPT_URL, get_stylesheet_directory_uri().'/mainmenu.php');
+			curl_setopt($main_menu, CURLOPT_HEADER, 0);
+			
+			// grab URL and pass it to the browser
+			curl_exec($main_menu);
+			
+			// close cURL resource, and free up system resources
+			curl_close($main_menu);
+			?>
 			
 		</nav>
 		</header>
