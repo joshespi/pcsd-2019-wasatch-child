@@ -8,6 +8,17 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() .'/assets/slick/slick.css' ?>"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() .'/assets/slick/slick-theme.css' ?>"/>
 		<link href="https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css" type="text/css" rel="stylesheet">
+		<?php
+		if (has_post_thumbnail()) {
+		?>
+		<meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>" />	
+		<?php
+		} else {
+		?>
+		<meta property="og:image" content="<?php echo get_stylesheet_directory_uri().'/assets/images/building-image.jpg'; ?>" />
+		<?php
+		}
+		?>
 		<?php wp_head(); ?>
 	</head>
 	<body>
