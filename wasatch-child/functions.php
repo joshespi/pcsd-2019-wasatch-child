@@ -102,47 +102,7 @@ function my_login_logo_url_title() {
 return 'Elem School | Provo City School District';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
-/*==========================================================================================
-// Auto include link icons
-============================================================================================*/
-function extinlineLinkClass($extlink) {
-   // global $post;
-    	if('<a href') {
-	    	return str_replace('<a href', '<a class="ext" href', $extlink);
-    	} 
-}
-function intinlineLinkClass($intlink) {
-    //global $post;
-    	if('<a class="ext" href="https://sandbox2.provo.edu') {
-	    	return str_replace('<a class="ext" href="https://sandbox2.provo.edu', '<a class="int" href="https://sandbox2.provo.edu"', $intlink);
-    	} 
-}
-function pdfinlineLinkClass($pdflink) {
-    	if('.pdf">') {
-	    	return str_replace('.pdf">', '.pdf" class="pdf">', $pdflink);
-    	} 
-}
-function pdflistLinkClass($pdflistlink) {
-    	if('<li><a') {
-	    	return str_replace('<li><a', '<li class="pdf"><a href', $pdflistlink);
-    	} 
-}
-function extlistLinkClass($extlistlink) {
-    	if('<li class="pdf"><a class="ext') {
-	    	return str_replace('<li class="pdf"><a class="ext', '<li class="ext"><a ', $extlistlink);
-    	} 
-}
-function intlistLinkClass($intlistlink) {
-    	if('<li class="pdf"><a class="int" href="https://sandbox2.provo.edu') {
-	    	return str_replace('<li class="pdf"><a class="int" href="https://sandbox2.provo.edu', '<li class="int"><a href="https://sandbox2.provo.edu', $intlistlink);
-    	} 
-}
-//add_filter('the_content', 'extinlineLinkClass');
-//add_filter('the_content', 'intinlineLinkClass');
-//add_filter('the_content', 'pdfinlineLinkClass');
-//add_filter('the_content', 'pdflistLinkClass');
-//add_filter('the_content', 'extlistLinkClass');
-//add_filter('the_content', 'intlistLinkClass');
+
 /*==========================================================================================
 // ShortCodes
 ============================================================================================*/
