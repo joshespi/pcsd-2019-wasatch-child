@@ -31,6 +31,7 @@
 			<li class="int"><a href="https://www.wasatch.provo.edu/school-information/chinese-immersion/">Chinese Immersion</a></li>
 			<li class="pdf"><a href="https://www.wasatch.provo.edu/wp-content/uploads/2018/11/Wasatch-Boundaries.pdf">Boundary Map</a></li>
 			<li class="int"><a href="https://wasatch.provo.edu/school-information/student-drop-off-and-pick-up-procedures/">Student Drop Off and Pick Up Procedures</a></li>
+			<li class="int"><a href="https://wasatch.provo.edu/school-information/paws/">PAWS</a></li>
 		</ul>
 </div>
 <div class="dropDownColumn">
